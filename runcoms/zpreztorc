@@ -10,7 +10,7 @@
 #
 
 # Set case-sensitivity for completion, history lookup, etc.
-# zstyle ':prezto:*:*' case-sensitive 'yes'
+zstyle ':prezto:*:*' case-sensitive 'no'
 
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
@@ -31,7 +31,9 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'git' \
   'completion' \
+  'syntax-Highlighting' \
   'prompt'
 
 #
@@ -54,7 +56,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -67,7 +69,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 #
 # GNU Utility
@@ -159,6 +161,40 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Syntax Highlighting
 #
 
+# highlighters
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets'
+
+# styles
+zstyle ':prezto:module:syntax-highlighting' styles \
+  'default' 'fg=white' \
+  'unknown-token' 'fg=red' \
+  'reserved-word' 'fg=magenta' \
+  'alias' 'fg=cyan,bold' \
+  'builtin' 'fg=green' \
+  'function' 'fg=cyan' \
+  'command' 'fg=green,bold' \
+  'precommand' 'fg=cyan' \
+  'single-hyphen-option' 'fg=white,bold' \
+  'double-hyphen-option' 'fg=white,bold' \
+  'single-quoted-argument' 'bg=green,fg=black' \
+  'double-quoted-argument' 'fg=green' \
+  'back-double-quoted-argument' 'bg=blue' \
+  'commandseparator' 'fg=yellow' \
+  'path' 'underline' \
+  'path-prefix' 'bg=blue' \
+  'globbing' 'bg=cyan' \
+  'bracket-level-1' 'fg=blue,bold' \
+  'bracket-level-2' 'fg=red,bold' \
+  'bracket-level-3' 'fg=yellow,bold' \
+  'bracket-level-4' 'fg=magenta,bold'
+
+
+# Terminal
+# Auto set the tab and window titles.
+zstyle ':prezto:module:terminal' auto-title 'yes'
+
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
 # zstyle ':prezto:module:syntax-highlighting' highlighters \
@@ -200,10 +236,10 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'

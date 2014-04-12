@@ -9,3 +9,46 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+# Editors
+export SHELL='zsh'
+export EDITOR='vim'
+export VISUAL='vim'
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1,32'
+export PAGER='less'
+
+# Language
+if [[ -z "$LANG" ]]; then
+  export LANG='en_US.UTF-8'
+fi
+
+# misc
+alias zshrc="vim ~/.zshrc"
+alias zshenv="vim ~/.zshenv"
+
+alias rsync-mv="rsync -a --progress --remove-source-files"
+alias rsync-cp="rsync -a --progress"
+alias cl='clear'
+
+# git
+alias ga='git add -A'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+alias gta='git tag -a -m'
+alias gf='git reflog'
+
+alias glg="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
+
+
+
+
