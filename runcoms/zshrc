@@ -51,8 +51,8 @@ globalias() {
 
 zle -N globalias
 
-bindkey " " globalias
-bindkey "^ " magic-space           # control-space to bypass completion
-bindkey -M isearch " " magic-space # normal space during searches
+bindkey "^ " globalias
+#bindkey "^ " magic-space           # control-space to bypass completion
+#bindkey -M isearch " " magic-space # normal space during searches
 
 
