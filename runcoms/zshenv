@@ -51,6 +51,18 @@ alias gf='git reflog'
 
 alias glg="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
 
+# cygwin
+if [[ `uname` =~ .*CYGWIN.* ]]; then
+    if [[ ( -z `/cygdrive/c/Windows/system32/whoami /priv |grep SeCreateSymbolicLinkPrivilege`) ]]; then
+        echo "Warning, you do not have the SeCreateSymbolicLinkPrivilege!, cygwin will not be able to use native symlinking" 
+    else
+        export CYGWIN="winsymlinks:native"
+    fi
+    alias cyg='apt-cyg -m http://mirrors.kernel.org/sources.redhat.com/cygwin/'
+    alias cygs='cygstart -- /cygdrive/c/cygwin64/setup-x86_64.exe'
+    alias cyp='apt-cyg -m http://mirrors.kernel.org/sources.redhat.com/cygwinports/'
+    alias cyps='cygstart -- /cygdrive/c/cygwin64/setup-x86_64.exe -K http://cygwinports.org/ports.gpg -O -s ftp://ftp.cygwinports.org/pub/cygwinports'
+fi
 
 
 
