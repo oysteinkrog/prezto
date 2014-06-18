@@ -35,7 +35,7 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'fasd' \
   'completion' \
-  'syntax-Highlighting' \
+  'syntax-highlighting' \
   'prompt'
 
 #
