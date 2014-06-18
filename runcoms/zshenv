@@ -30,24 +30,6 @@ alias rsync-mv="rsync -a --progress --remove-source-files"
 alias rsync-cp="rsync -a --progress"
 alias cl='clear'
 
-# git
-alias ga='git add -A'
-alias gp='git push'
-alias gl='git log'
-alias gs='git status'
-alias gst='git st'
-alias gd='git diff'
-alias gm='git commit -m'
-alias gma='git commit -am'
-alias gb='git branch'
-alias gc='git checkout'
-alias gra='git remote add'
-alias grr='git remote rm'
-alias gpu='git pull'
-alias gpur='git pull --rebase'
-alias gcl='git clone'
-alias gta='git tag -a -m'
-alias gf='git reflog'
 
 alias glg="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
 
