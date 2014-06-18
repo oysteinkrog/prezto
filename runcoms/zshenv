@@ -30,8 +30,11 @@ alias rsync-mv="rsync -a --progress --remove-source-files"
 alias rsync-cp="rsync -a --progress"
 alias cl='clear'
 
+alias gtl="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
+alias gtc="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:commit /path:."
+alias gtm="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:merge /path:."
+alias gtd="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:diff /path:."
 
-alias glg="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
 
 # cygwin
 if [[ `uname` =~ .*CYGWIN.* ]]; then
