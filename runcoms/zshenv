@@ -38,7 +38,7 @@ alias gtd="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:diff 
 
 # cygwin
 if [[ `/usr/bin/uname` =~ .*CYGWIN.* ]]; then
-    if [[ ( -z `/cygdrive/c/Windows/system32/whoami /priv |grep SeCreateSymbolicLinkPrivilege`) ]]; then
+    if [[ ( -z `/cygdrive/c/Windows/system32/whoami /priv |/usr/bin/grep SeCreateSymbolicLinkPrivilege`) ]]; then
         echo "Warning, you do not have the SeCreateSymbolicLinkPrivilege!, cygwin will not be able to use native symlinking" 
     else
         export CYGWIN="winsymlinks:native"
