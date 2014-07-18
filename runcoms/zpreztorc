@@ -246,6 +246,9 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
+# Faster git
+zstyle ':prezto:module:git:info' status 'simple/complex'
+
 # Set the default session name:
 # zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
 
