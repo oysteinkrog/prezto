@@ -174,6 +174,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
 
   # Index (i)
   alias gia='git add'
+  alias giaa='git add --all'
   alias giA='git add --patch'
   alias giu='git add --update'
   alias gid='git diff --no-ext-diff --cached'
