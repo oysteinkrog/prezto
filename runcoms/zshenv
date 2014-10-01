@@ -48,6 +48,7 @@ if [[ `/usr/bin/uname` =~ .*CYGWIN.* ]]; then
     alias cyp='apt-cyg -m http://mirrors.kernel.org/sources.redhat.com/cygwinports/'
     alias cyps='cygstart -- /cygdrive/c/cygwin64/setup-x86_64.exe -K http://cygwinports.org/ports.gpg -O -s ftp://ftp.cygwinports.org/pub/cygwinports'
     alias fix-exe-perms='find . -iname "*.exe" -print0 | xargs -0 chmod 755'
+    alias fix-bat-perms='find . -iname "*.bat" -print0 | xargs -0 chmod 755'
 fi
 
 
