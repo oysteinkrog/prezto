@@ -247,7 +247,7 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Faster git
-zstyle ':prezto:module:git:info' status 'simple/complex'
+zstyle ':prezto:module:git:info' status 'simple'
 
 # Set the default session name:
 # zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
