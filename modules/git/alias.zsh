@@ -217,9 +217,11 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
 
   # Rebase (r)
   alias gr='git rebase'
+  alias gru='git rebase @\{u\}'
   alias gra='git rebase --abort'
   alias grc='git rebase --continue'
   alias gri='git rebase --interactive'
+  alias griu='git rebase --interactive @\{u\}'
   alias grs='git rebase --skip'
 
   # Remote (R)
