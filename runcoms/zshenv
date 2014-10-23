@@ -51,9 +51,10 @@ if [[ `/usr/bin/uname` =~ .*CYGWIN.* ]]; then
     alias cyps='cygstart -- /cygdrive/c/cygwin64/setup-x86_64.exe -K http://cygwinports.org/ports.gpg -O -s ftp://ftp.cygwinports.org/pub/cygwinports'
     alias fix-exe-perms='find . -iname "*.exe" -print0 | xargs -0 chmod 755'
     alias fix-bat-perms='find . -iname "*.bat" -print0 | xargs -0 chmod 755'
-    alias winpath='cygpath -w'
-    alias pwdw='cygpath -w `pwd`'
-    alias eh='explorer `pwdw`'
+    alias winpath='cygpath -w -a'
+    alias pwdw='winpath `pwd`'
+    oe(){explorer `winpath $1`}
+    alias roothere='ssh localhost -l root cd `pwd`'
 fi
 
 
