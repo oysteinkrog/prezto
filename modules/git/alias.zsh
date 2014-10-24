@@ -60,6 +60,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcSm='git commit -S --message'
   alias gcam='git commit --all --message'
   alias gcma='git commit --all --message'
+  alias gcx='git commit --fixup'
   alias gco='git checkout'
   alias gcO='git checkout --patch'
   alias gcf='git commit --amend --reuse-message HEAD'
@@ -221,7 +222,9 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gra='git rebase --abort'
   alias grc='git rebase --continue'
   alias gri='git rebase --interactive'
-  alias griu='git rebase --interactive @\{u\}'
+  alias gria='git rebase --interactive --autosquash'
+  alias griu='git rebase --interactive @\{u\}' 
+  alias griau='git rebase --interactive --autosquash @\{u\}'
   alias grs='git rebase --skip'
 
   # Remote (R)
