@@ -270,6 +270,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gwd='git diff --no-ext-diff'
   alias gwD='git diff --no-ext-diff --word-diff'
   alias gwr='git reset --soft'
+  alias gwrm='git reset --mixed'
   alias gwR='git reset --hard'
   alias gwc='git clean -n'
   alias gwC='git clean -f'
