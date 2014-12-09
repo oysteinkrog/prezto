@@ -14,7 +14,7 @@ fi
 export SHELL='zsh'
 export EDITOR='vim'
 export VISUAL='vim'
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1,32'
+export GREP_COLOR='1,32'
 export PAGER='less'
 
 # Language
