@@ -50,4 +50,9 @@ bindkey "^ " globalias
 #bindkey "^ " magic-space           # control-space to bypass completion
 #bindkey -M isearch " " magic-space # normal space during searches
 
+# http://lethalman.blogspot.no/2009/10/speeding-up-zsh-completion.html
+# This way you tell zsh comp to take the first part of the path to be exact, and to avoid partial globs. Now path completions became nearly immediate.
+zstyle ':completion:*' accept-exact '*(N)'
 
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
