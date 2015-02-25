@@ -65,6 +65,9 @@ if [[ $unameo == Cygwin || $unameo == Msys ]] {
     alias pwdw='winpath `pwd`'
     oe(){explorer `winpath $1`}
     alias roothere='ssh localhost -l root cd `pwd`'
+    if [ -e "/usr/share/zsh/scripts/newuser" ]; then
+        rm /usr/share/zsh/scripts/newuser
+    fi
 }
 
 
