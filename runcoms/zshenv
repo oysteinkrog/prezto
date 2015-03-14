@@ -39,12 +39,12 @@ if [[ $unameo == Cygwin || $unameo == Msys ]] {
 
     export MSYS2_ARG_CONV_EXCL="/priv;"
 
-    if [[ ( -z `$WINDIR/system32/whoami /priv | /usr/bin/grep SeCreateSymbolicLinkPrivilege`) ]]; then
-        echo "Warning, you do not have the SeCreateSymbolicLinkPrivilege!, shell will not be able to use native symlinking" 
-    else
-        export CYGWIN="winsymlinks:native"
-        export MSYS="winsymlinks:nativestrict"
-    fi
+    #if [[ ( -z `$WINDIR/system32/whoami /priv | /usr/bin/grep SeCreateSymbolicLinkPrivilege`) ]]; then
+        #echo "Warning, you do not have the SeCreateSymbolicLinkPrivilege!, shell will not be able to use native symlinking" 
+    #else
+        #export CYGWIN="winsymlinks:native"
+        #export MSYS="winsymlinks:nativestrict"
+    #fi
 
     # TortiseGit
     alias gtl="'C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe' /command:log /path:."
