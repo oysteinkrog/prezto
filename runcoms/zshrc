@@ -56,3 +56,8 @@ zstyle ':completion:*' accept-exact '*(N)'
 
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
+
+
+# Turn off the darn % at the end of a partial line.
+#unsetopt promptsp
+PROMPT_EOL_MARK='%{%}'
