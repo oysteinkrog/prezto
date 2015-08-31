@@ -74,8 +74,8 @@ if [[ $unameo == Cygwin || $unameo == Msys ]] {
     if [ -e "/usr/share/zsh/scripts/newuser" ]; then
         rm /usr/share/zsh/scripts/newuser
     fi
-    alias copyalldeps='ntldd -R *|grep "=>"|grep -v Windows|grep mingw|awk '{print $3}'|sed 's:\\:/:g'|xargs -i cygpath -u "{}"|xargs -i cp {} .'
 
+    alias copyalldeps='ntldd -R *|grep "=>"|awk '{print $1}'|grep -v Windows|xargs -i where {}|grep -v Windows|grep mingw|sed 's:\\:/:g'|xargs -i cygpath -u "{}"|xargs -i cp {} .'
 }
 
 
