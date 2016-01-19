@@ -18,7 +18,7 @@ zstyle -s ':prezto:module:git:log:oneline' format '_git_log_oneline_format' \
 zstyle -s ':prezto:module:git:log:brief' format '_git_log_brief_format' \
   || _git_log_brief_format='%C(green)%h%C(reset) %s%n%C(blue)(%ar by %an)%C(red)%d%C(reset)%n'
 zstyle -s ':prezto:module:git:log:short' format '_git_log_short_format' \
-  || _git_log_short_format='%C(green)%h %C(yellow)[%<(14)%ad] %Creset%s%Cred%d%Cblue [%cn]'
+  || _git_log_short_format='%C(green)%h %C(yellow)[%<(14)%ad] %Creset%s%Cred%d%Cblue [%an] [%cn]'
 
 # Status
 zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_submodules' \
