@@ -33,7 +33,7 @@ alias rsync-cp="rsync -a --progress"
 alias cl='clear'
 alias git='noglob git'
 
-unameo=$(/usr/bin/uname -o)
+unameo=$(uname -o)
 
 # cygwin/msys
 if [[ $unameo == Cygwin || $unameo == Msys ]] {
