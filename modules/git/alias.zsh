@@ -175,6 +175,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias ggv='git grep --invert-match'
   alias ggw='git grep --word-regexp'
 
+  alias ggph='git-getparenthash'
+
   # Index (i)
   alias gia='git add'
   alias giaa='git add --all'
@@ -194,6 +196,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gls='git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"'
   alias glss='git log --graph --pretty=format:"${_git_log_short_format}" --decorate --date=relative'
   alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:"${_git_log_medium_format}"'
+  alias glp='git log --topo-order --stat --patch --pretty=format:"${_git_log_medium_format}"'
   alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
   alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
   alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
